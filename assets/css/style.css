@@ -520,3 +520,109 @@ img {
     color: var(--text-medium);
     font-size: 0.9rem;
 }
+
+/* Laptop (1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+    .about-content {
+        gap: 30px;
+    }
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Mobile Nav */
+    .hamburger {
+        display: block;
+        z-index: 1002;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background-color: var(--card-bg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: right 0.4s ease-in-out;
+        z-index: 1001;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar a {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-info {
+        margin-top: 40px;
+    }
+}
+
+/* Mobile Large (425px) */
+@media (max-width: 425px) {
+    .container {
+        padding: 0 20px;
+    }
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    .home-content .subtitle {
+        font-size: 1.2rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Mobile Small (320px) */
+@media (max-width: 320px) {
+    .home-content h1 {
+        font-size: 1.8rem;
+    }
+}
