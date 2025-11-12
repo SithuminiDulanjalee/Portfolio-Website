@@ -242,6 +242,44 @@ img {
     font-size: 0.9rem;
 }
 
+.about-section {
+    background-color: var(--dark-bg-secondary);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    border-radius: 10px;
+    border: 3px solid var(--border-color);
+}
+
+.about-text h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: var(--text-medium);
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style-type: '✓ ';
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.about-text ul li {
+    color: var(--text-medium);
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
 
 .footer {
     background-color: #000;
