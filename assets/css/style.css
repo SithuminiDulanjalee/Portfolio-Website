@@ -308,6 +308,52 @@ img {
     color: var(--text-light);
 }
 
+.resume-section {
+    background-color: var(--dark-bg);
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.resume-column h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.timeline-item {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.timeline-item h4 {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.timeline-item .date {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+    background-color: rgba(138, 43, 226, 0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.timeline-item p {
+    color: var(--text-medium);
+}
 
 .footer {
     background-color: #000;
