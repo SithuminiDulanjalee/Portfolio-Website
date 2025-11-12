@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const textElement = document.getElementById('typing-text');
-    const textToType = "Hi, I'm Sithumini Dulanjalee";
+    const textToType = "Hi, I'm Sithumini";
     let charIndex = 0;
     const typingSpeed = 150;
 
