@@ -123,3 +123,20 @@ document.addEventListener("DOMContentLoaded", function() {
     animate();
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const textElement = document.getElementById('typing-text');
+    const textToType = "Hi, I'm Sithumini Dulanjalee";
+    let charIndex = 0;
+    const typingSpeed = 150;
+
+    function typeOnce() {
+        if (charIndex < textToType.length) {
+            textElement.textContent += textToType.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeOnce, typingSpeed);
+        }
+    }
+
+    typeOnce();
+});
